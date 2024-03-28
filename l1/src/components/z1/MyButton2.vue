@@ -1,5 +1,5 @@
 <template>
-    {{ this.prop1 }}
+
     <button class="b" :style="{ background: prop2, color: prop1 }" @click="click">{{ title }}</button>
 </template>
 
@@ -23,6 +23,6 @@ export default {
 
 <style scoped>
 .b {
-    font-size: 30px;
+    font-size: 10px;
 }
 </style>

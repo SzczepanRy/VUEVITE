@@ -1,9 +1,9 @@
 <template>
     <div id="main">
         <MyButton2 :prop1="bg" :prop2="cl"></MyButton2>
-        <hr>
+        <hr />
         <MySelect></MySelect>
-        <hr>
+        <hr />
         <MySelect2 :prop1="array"></MySelect2>
     </div>
 </template>
@@ -18,10 +18,10 @@ export default {
             message: "Hello World",
             bg: "red",
             cl: "blue",
-            array:["aaa","bbb","ccc","ddd"]
+            array: ["aaa", "bbb", "ccc", "ddd"],
         };
     },
-    components: { MyButton2 ,MySelect,MySelect2},
+    components: { MyButton2, MySelect, MySelect2 },
 };
 </script>
 

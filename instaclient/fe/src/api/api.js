@@ -1,3 +1,5 @@
+import axios from "axios";
+
 const get = async (url) => {
 
     return new Promise(async (resolve, reject) => {
@@ -12,10 +14,10 @@ const get = async (url) => {
                 reject(err)
             }
 
-        }, 500 + Math.random() * 1000);
+        }, 2000 + Math.random() * 1000);
 
     })
 }
 
 
-export const getCars = () => get("http://localhost:3000/apicars")
+export const getCars = () => get("http://localhost:3000/api/cars")

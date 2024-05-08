@@ -15,6 +15,10 @@ const cars = {
     mutations: {
         SET_CARS_LIST(state, newCars) {
             state.carsList = newCars
+        },
+        SET_CARS_LOADING(state,val) {
+
+            state.carsLoading = val
         }
     },
 
@@ -23,6 +27,11 @@ const cars = {
         GET_CARS_LIST(state) {
             return state.carsList
         }
+        ,
+        GET_CARS_LOADING(state){
+            return state.carsLoading
+        }
+
     },
 
     // tu zapytania do serwera z pomocą naszego api
@@ -31,7 +40,7 @@ const cars = {
 
         async FETCH_CARS({ state, commit }) {
 
-            // najpierw ustawiamy stan ładowania na true 
+            // najpierw ustawiamy stan ładowania na true
 
             commit("SET_CARS_LOADING", true)
 
@@ -55,7 +64,6 @@ const cars = {
             }
         }
     }
-
 }
 
 export default cars

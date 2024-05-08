@@ -12,7 +12,7 @@ const store = createStore({
 
     mutations: {
         plus(state) {
-            this.state.c++;
+            this.state.c++; 
         },
         data(state, data) {
             this.state.data = data;

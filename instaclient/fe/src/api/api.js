@@ -17,7 +17,5 @@ const get = async (url) => {
         }, 2000 + Math.random() * 1000);
 
     })
-}
-
-
+} 
 export const getCars = () => get("http://localhost:3000/api/cars")

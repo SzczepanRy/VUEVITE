@@ -28,7 +28,7 @@ export default {
         <h1>LOADINGGG</h1>
     </div>
     <div class="home">
-        <RouterLink v-for="car in load" :to="`/car/${car.id}`" :key="car.id">
+        <RouterLink v-if="!checkLoading" v-for="car in load" :to="`/car/${car.id}`" :key="car.id">
                    
             <CarTile v-bind:car="car" />
         </RouterLink>

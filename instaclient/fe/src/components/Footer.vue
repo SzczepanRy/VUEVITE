@@ -11,7 +11,7 @@
         width:100vw;
         height:80px;
         display:flex;
-        alighn-items:center;
+        align-items:center;
         justify-content:center;
     }
 </style>

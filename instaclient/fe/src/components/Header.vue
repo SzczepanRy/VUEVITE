@@ -3,6 +3,7 @@
     <div class="navig">
 
         <RouterLink to="/" exact>Home</RouterLink>
+         <RouterLink to="/upload">Upload</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/nnn">Not found</RouterLink>
     </div>
